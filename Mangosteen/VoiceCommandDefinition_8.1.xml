@@ -19,11 +19,10 @@
             <ListenFor> Search [for] {dictatedSearchTerms} </ListenFor>
             <ListenFor> Find {dictatedSearchTerms} </ListenFor>
             <ListenFor> Find </ListenFor>
-            <ListenFor> from {dictatedSearchTerms} </ListenFor>
-            <ListenFor> about {dictatedSearchTerms} </ListenFor>
+            <ListenFor> {dictatedSearchTerms} </ListenFor>
 
           <!--Feedback provides the displayed and spoken text when your command is triggered -->
-            <Feedback> Monkeys are digging through your email... </Feedback>
+            <Feedback> Baby monkeys are digging through your email... </Feedback>
 
             <!-- Navigate specifies the desired page or invocation destination for the Command-->
             <Navigate Target="MainPage.xaml" />
@@ -31,8 +30,8 @@
 
         <Command Name="MSDNNaturalLanguage">
             <Example> I want to go to the Windows Phone Dev center </Example>
-            <ListenFor> {naturalLanguage} </ListenFor>
-            <Feedback> Little monkeys are digging through your email... </Feedback>
+            <ListenFor> natural {naturalLanguage} </ListenFor>
+            <Feedback> Monkeys are digging through your email... </Feedback>
             <Navigate Target="MainPage.xaml" />
         </Command>
 

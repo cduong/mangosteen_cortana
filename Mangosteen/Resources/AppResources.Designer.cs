@@ -178,7 +178,7 @@ namespace MSDN_Voice_Search.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://social.msdn.microsoft.com/Search/en-US?query={0}.
+        ///   Looks up a localized string similar to http://mangosteen.azurewebsites.net/?q={0}.
         /// </summary>
         public static string MSDNSearchQueryBase {
             get {
