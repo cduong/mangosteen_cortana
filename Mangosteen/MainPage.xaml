@@ -21,12 +21,6 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Rectangle x:Name="LogoContainer" Grid.Row="0" HorizontalAlignment="Left" Width="250" Height="70" Margin="24,0" Fill="{StaticResource PhoneForegroundBrush}" Tap="OnLogoContainerTapped">
-            <Rectangle.OpacityMask>
-                <ImageBrush ImageSource="/Assets/MsdnLogo.png" />
-            </Rectangle.OpacityMask>
-        </Rectangle>
-
         <Grid x:Name="ContentGrid" Grid.Row="1">
             <TextBlock x:Name="TitleText" Grid.Row="0" Text="{Binding Path=LocalizedResources.BigApplicationHeader, Source={StaticResource LocalizedStrings}}" Margin="24,-10,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontFamily="Portable User Interface"/>
             <phone:WebBrowser x:Name="BrowserControl" Canvas.ZIndex="1" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Bottom" Height="0" IsScriptEnabled="True" IsGeolocationEnabled="True" LoadCompleted="OnBrowserLoadCompleted" Navigating="OnBrowserNavigating">
@@ -137,5 +131,10 @@
                 </Rectangle>
             </Canvas>
         </Canvas>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="33">
+        	<Run Text="INBOX - MICROSOFT"/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
     </Grid>
 </phone:PhoneApplicationPage>
